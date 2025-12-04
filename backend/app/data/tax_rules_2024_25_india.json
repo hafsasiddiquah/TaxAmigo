@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "country": "India",
+    "financial_year": "2024-25",
+    "assessment_year": "2025-26",
+    "currency": "INR",
+    "note": "Simplified sample rules for demonstration only. Not legal or financial advice."
+  },
+  "old_regime": {
+    "age_bands": [
+      {
+        "label": "adult",
+        "min_age": 18,
+        "max_age": 59,
+        "basic_exemption_limit": 250000
+      },
+      {
+        "label": "senior",
+        "min_age": 60,
+        "max_age": 79,
+        "basic_exemption_limit": 300000
+      },
+      {
+        "label": "super_senior",
+        "min_age": 80,
+        "max_age": 120,
+        "basic_exemption_limit": 500000
+      }
+    ],
+    "slabs": [
+      { "upto": 250000, "rate_percent": 0 },
+      { "from": 250001, "upto": 500000, "rate_percent": 5 },
+      { "from": 500001, "upto": 1000000, "rate_percent": 20 },
+      { "from": 1000001, "rate_percent": 30 }
+    ],
+    "common_deductions": {
+      "80C": {
+        "label": "Investments in specified instruments",
+        "max_amount": 150000
+      },
+      "80D": {
+        "label": "Medical insurance premium",
+        "max_amount_self_family": 25000
+      },
+      "24B": {
+        "label": "Home loan interest (self-occupied)",
+        "max_amount": 200000
+      },
+      "80CCD(1B)": {
+        "label": "Additional NPS contribution",
+        "max_amount": 50000
+      }
+    }
+  },
+  "new_regime": {
+    "note": "Post Budget 2023 revised new regime slabs (approximate).",
+    "slabs": [
+      { "upto": 300000, "rate_percent": 0 },
+      { "from": 300001, "upto": 700000, "rate_percent": 5 },
+      { "from": 700001, "upto": 1000000, "rate_percent": 10 },
+      { "from": 1000001, "upto": 1200000, "rate_percent": 15 },
+      { "from": 1200001, "upto": 1500000, "rate_percent": 20 },
+      { "from": 1500001, "rate_percent": 30 }
+    ],
+    "allowed_deductions": {
+      "80CCD(1B)": {
+        "label": "Additional NPS contribution (example)",
+        "max_amount": 50000
+      }
+    }
+  },
+  "cess": {
+    "health_education_cess_percent": 4
+  },
+  "surcharge": {
+    "note": "Simplified surcharge bands for demonstration only.",
+    "bands": [
+      {
+        "threshold": 5000000,
+        "rate_percent": 10
+      },
+      {
+        "threshold": 10000000,
+        "rate_percent": 15
+      },
+      {
+        "threshold": 20000000,
+        "rate_percent": 25
+      }
+    ]
+  }
+}
+
+
